@@ -17,22 +17,22 @@
 
 //GETELEMENTBTID
 // console.log(document.getElementById('header-title'));
-var headerTitle = document.getElementById('header-title');
-var header = document.getElementById('main-header');
+// var headerTitle = document.getElementById('header-title');
+// var header = document.getElementById('main-header');
 // console.log(headerTitle);
 // headerTitle.textContent = 'Hello';
 // headerTitle.innerText = 'Goodbye';
 // console.log(headerTitle.textContent);
 // headerTitle.innerHTML = '<h3>Hello</h3>'
-headerTitle.style.borderBottom = 'solid 3px #000'
+// headerTitle.style.borderBottom = 'solid 3px #000'
 
 //GETELEMENTABYLASTNAME
-var items = document.getElementsByClassName('list-group-item');
-console.log(items);
-console.log(items[4]);
+// var items = document.getElementsByClassName('list-group-item');
+// console.log(items);
+// console.log(items[4]);
 // items[4].textContent = 'Hello 2';
-items[4].style.fontWeight = 'bold';
-items[4].style.color = 'green';
+// items[4].style.fontWeight = 'bold';
+// items[4].style.color = 'green';
 
 
 // // Give the Error
