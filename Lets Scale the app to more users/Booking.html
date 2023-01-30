@@ -7,7 +7,7 @@
     <center>
     <h1>Save To Local Storage</h1>
     <form onsubmit="saveToLocalStorage(event)">
-        
+
         <label>Name :</label>
         <input type="name" name="username" required>
 <br>
@@ -23,7 +23,7 @@
         <button>Submit</button>
 </center>
     </form>
-    
+
      <script>
         function saveToLocalStorage(event)
 {
@@ -42,9 +42,9 @@
         phoneno : phoneno
     }
     localStorage.setItem('userDetails',JSON.stringify(obj))
-    
+
 }
      </script>  
-            
+
 </body>
 </html>
