@@ -4,23 +4,22 @@
      <title>StoreTheData</title>
 </head>
 <body>
-    <center>
+    <h1>Appointment Booking App</h1>
     <form onsubmit="saveToLocalStorage(event)">
 
         <label>Name :</label>
         <input type="name" name="username" required>
-<br>
-<br>
+
+
         <label>Email Id:</label>
         <input type="email" name="emailId" required>
-<br>
-<br>
-     <label>Phone No:</label>
-        <input type="tel" name="phoneno">
-        <br>
-        <br>
+
+
+   
+        
+        
         <button>Submit</button>
-</center>
+
     </form>
 <ul id='listOfitems'></ul>
      <script>
@@ -29,13 +28,13 @@
     event.preventDefault();
     var name = event.target.username.value;
     var email = event.target.emailId.value;
-    var phoneno = event.target.phoneno.value;
+   
    
     // obj
     const obj = {
         name,
         email,
-        phoneno
+     
     }
     localStorage.setItem(obj.email, JSON.stringify(obj))
     showUserOnScreen(obj)
@@ -46,7 +45,7 @@ function showUserOnScreen(obj)
      
 
      const childElem = document.createElement('li')
-      childElem.textContent = obj.name + ' - ' + obj.email + ' - '  + obj.phoneno
+      childElem.textContent = obj.name + ' - ' + obj.email 
 
       // for delete button...
       const deleteButton = document.createElement('input')
@@ -74,7 +73,7 @@ function showUserOnScreen(obj)
         // logic....
         document.getElementById('usernameInputTag').value = obj.name
         document.getElementById('emaiInputTag').value = obj.email
-        document.getElementById('phonenoInputTag').value = obj.phoneno
+      
       }
       childElem.appendChild(deleteButton)
       childElem.appendChild(editButton)
